@@ -40,7 +40,8 @@ header {
     display:flex;
     flex-direction: row;
     /* 쌓는 방향과 평행으로 어떻게 쌓을 것인가? */
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* justify-content: space-between; */
     /* 쌓는 방향과 수직으로 어떻게 쌓을 것인가? */
     align-items:center;
     font-size:1.2em;

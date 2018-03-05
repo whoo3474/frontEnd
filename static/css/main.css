@@ -2,7 +2,7 @@ html {
     font-size:14px;
 }
 
-/* 
+/*
 header {
     width:100%;
     font-size:1.2em;
@@ -55,4 +55,24 @@ header ul.nav {
 }
 ul.nav li {
     margin-left:20px;
+}
+
+div.books div{
+  display:flex;
+  justify-content: space-between;
+}
+
+div.books div.book{
+  display: flex;
+  flex-direction: column;
+}
+
+.book{
+  width: 200px;
+}
+
+.book p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

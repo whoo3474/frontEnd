@@ -1,0 +1,58 @@
+html {
+    font-size:14px;
+}
+
+/* 
+header {
+    width:100%;
+    font-size:1.2em;
+    text-align:justify;
+}
+header .logo {
+    display:inline-block;
+    font-size:2em;
+}
+header ul.nav {
+    display:inline-block;
+    list-style:none;
+    font-size:1.4rem;
+}
+.nav li {
+    display:inline-block;
+}
+header::after {
+    display: inline-block;
+    content:'';
+    width:100%;
+} */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+}
+header {
+    padding:6px;
+    background-color:navy;
+    color:#fff;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    /* 쌓는 방향과 평행으로 어떻게 쌓을 것인가? */
+    justify-content: space-between;
+    /* 쌓는 방향과 수직으로 어떻게 쌓을 것인가? */
+    align-items:center;
+    font-size:1.2em;
+}
+header .logo {
+    font-size:2em;
+}
+header ul.nav {
+    display:flex;
+    list-style:none;
+    font-size:1.4rem;
+}
+ul.nav li {
+    margin-left:20px;
+}

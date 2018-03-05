@@ -28,7 +28,7 @@
     - HTML
         - 박스모델로 구획을 나누세요
         - row를 먼저, column을 나중에
-        - semantic tag
+        - semantic tag : 검색엔진 최적화
 
     - CSS (MDN 참고)
         - 박스모델 : box-sizing
@@ -39,5 +39,12 @@
             - id selector ( #id )
             - type selector ( element(tag) name )
         - combinator (연결자)
-            - descendant combinator ( parentSelector > childSelector)
+            - descendant combinator ( parentSelector childSelector)
             - child combinator ( parentSelector > childSelector)
+
+3. 2018 - 03 - 05
+    - CSS
+        - CSS Selector 적용 순서는 구체적일수록 우선한다.
+    - layout
+        - display:inline-block
+        - display:flex // 이게 더 요즘 방식

@@ -62,15 +62,31 @@ div.books div{
   display:flex;
   justify-content: space-between;
 }
+.book{
+    width: 25%;
+    float: left;
+}
+@media(max-width:500px){
+  .book{
+  float:left;
+  width:50%;
+}
+}
+
+.books > div::after{
+  clear:both;
+  display: block;
+  content: "";
+}
+
+
+
 
 div.books div.book{
   display: flex;
   flex-direction: column;
 }
 
-.book{
-  width: 200px;
-}
 
 .book p{
   text-overflow: ellipsis;

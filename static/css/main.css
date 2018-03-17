@@ -140,6 +140,22 @@ ul.nav li {
 .book button:hover {
     color:#ffd5af;
 }
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon.before.like::before,
+.icon.after.like::after {
+    font-family:'Material Icons';
+    content:'favorite';
+    font-size:24px;
+}
+.icon.before.reply::before,
+.icon.after.reply::after {
+    font-family:'Material Icons';
+    content:'mode_comment';
+    font-size:24px;
+}
 .book h4,
 .book p {
     padding:0 12px

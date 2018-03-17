@@ -54,39 +54,64 @@ header ul.nav {
     list-style:none;
     font-size:1.4rem;
 }
+header .material-icons {
+    display:none;
+}
+header #menu-mobile {
+    display:none;
+}
+@media(max-width:400px) {
+    header {
+        position: relative;
+    }
+    header ul.nav {
+        display:none;
+    }
+    header .material-icons {
+        display:block;
+    }
+    #menu-mobile.hide {
+        display:none;
+    }
+    #menu-mobile {
+        background-color:rgba(0,0,0,.6);
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0
+    }
+    #menu-mobile ul {
+        margin:0;position: absolute;
+        height:100%;right:0;width:160px;
+        padding:0;
+        background-color:#fff;
+        color:#000;
+        list-style: none;
+    }
+    #menu-mobile ul li {
+        padding:12px;
+    }
+}
 ul.nav li {
     margin-left:20px;
 }
 
-div.books div{
-  display:flex;
-  justify-content: space-between;
+.books > div::after {
+    clear: both;
+    content:'';
+    display:block
 }
 .book{
-    width: 25%;
-    float: left;
-}
-@media(max-width:500px){
-  .book{
+  width: 25%;
   float:left;
-  width:50%;
 }
+@media(max-width:400px) {
+    .book{
+      width: 50%;
+      float:left;
+    }
 }
-
-.books > div::after{
-  clear:both;
-  display: block;
-  content: "";
-}
-
-
-
-
-div.books div.book{
-  display: flex;
-  flex-direction: column;
-}
-
 
 .book p{
   text-overflow: ellipsis;

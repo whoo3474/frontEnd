@@ -31,6 +31,7 @@ header::after {
 }
 body {
     margin:0;
+    background-color: #efefef;
 }
 header {
     padding:6px;
@@ -96,15 +97,79 @@ header #menu-mobile {
 ul.nav li {
     margin-left:20px;
 }
-
+.main {
+    background-color:#fff;
+    margin-top:0;
+}
+.main p {
+    font-weight:300;
+    font-size: 24px;
+    line-height: 1.7em;
+    letter-spacing: -2px;
+    color: violet;
+    text-decoration: underline;
+}
 .books > div::after {
     clear: both;
     content:'';
     display:block
 }
 .book{
-  width: 25%;
+  width: 20%;
+  margin:0 2.5%;
   float:left;
+  background-color:#fff;
+  border: 1px solid #d0d0d0;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.6) 
+}
+.book .area-img {
+    position:relative;
+}
+.book img {
+    width:100%
+}
+.book .area-img .overlay {
+    opacity: 0;
+    transition:0.3s ease all;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    background-color:rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book .area-img:hover .overlay {
+    opacity: 1;
+}
+.book button {
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    cursor: pointer;
+}
+.book button:hover {
+    color:#ffd5af;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon.before.like::before,
+.icon.after.like::after {
+    font-family:'Material Icons';
+    content:'favorite';
+    font-size:24px;
+}
+.icon.before.reply::before,
+.icon.after.reply::after {
+    font-family:'Material Icons';
+    content:'mode_comment';
+    font-size:24px;
+}
+.book h4,
+.book p {
+    padding:0 12px
 }
 @media(max-width:400px) {
     .book{

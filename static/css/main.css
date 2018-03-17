@@ -97,7 +97,18 @@ header #menu-mobile {
 ul.nav li {
     margin-left:20px;
 }
-
+.main {
+    background-color:#fff;
+    margin-top:0;
+}
+.main p {
+    font-weight:300;
+    font-size: 24px;
+    line-height: 1.7em;
+    letter-spacing: -2px;
+    color: violet;
+    text-decoration: underline;
+}
 .books > div::after {
     clear: both;
     content:'';

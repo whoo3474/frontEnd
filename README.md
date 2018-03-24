@@ -93,3 +93,11 @@
     - 많은 질문들
     - 백그라운드 반응형으로 크기지정
     - flex:1
+
+6. 2018-03-24
+    - compile vs interpreter
+        - compile: 컴파일 과정, 번역 과정 ->  파일 전체 : 최적화 효율적 / 개발 어렵
+        - interpreter : 한 줄 씩 입력받아서 번역 : 최적화 떨어지지만 개발이 쉽다
+    - JS -> interpreter 언어
+        - variable에는 데이터 형이 없다. var
+        - 이벤트 핸들링 방식 : 콜백 지옥

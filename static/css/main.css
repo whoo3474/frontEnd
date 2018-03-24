@@ -82,18 +82,19 @@ header #menu-mobile {
     header .material-icons {
         display:block;
     }
-    #menu-mobile.hide {
-        display:none;
-    }
-    #menu-mobile {
+    header #menu-mobile {
         background-color:rgba(0,0,0,.6);
+        display:block;
         position: fixed;
         top:0;
         bottom:0;
         left:0;
         right:0
     }
-    #menu-mobile ul {
+    header #menu-mobile.hide {
+        display:none;
+    }
+    header #menu-mobile ul {
         margin:0;position: absolute;
         height:100%;right:0;width:160px;
         padding:0;
@@ -101,7 +102,7 @@ header #menu-mobile {
         color:#000;
         list-style: none;
     }
-    #menu-mobile ul li {
+    header #menu-mobile ul li {
         padding:12px;
     }
 }

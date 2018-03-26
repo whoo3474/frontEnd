@@ -101,3 +101,55 @@
     - JS -> interpreter 언어
         - variable에는 데이터 형이 없다. var
         - 이벤트 핸들링 방식 : 콜백 지옥
+
+7. 2018-03-26
+    - JS의 모든 원형, 객체는 Object
+        - function => Object
+        - String => Object
+
+    - event listener vs inline-event
+        - 왜 event listener가 더 많이 쓰일까?
+            - 유지보수가 좋음 왜?
+                - inline-event는 사용하는 만큼 코드가 늘어남
+            - 익명함수
+                - 호이스팅 등 JS해석할 때 Symbol로 잡지 않기 때문에 부하가 적죠.
+            - 로딩 차이
+                - 심볼 인식이 안될 수 있음
+
+    - 함수 선언
+        - function declaration : Hoisting
+        function handler() {}
+
+        - function expression : Hoisting X
+        var handler = function () {} (익명함수)
+        (function literal)
+
+    - 언어의 형태
+        - 객체지향 (C++, Java, 과제로 적어오기)
+            - 캡슐화
+            - 상속성
+            - 다형화
+        - 절차지향 (C언어)
+        - Prototype 언어
+            - Object가 모든 객체의 Prototype
+            - 각각 프로토타입을 갖는다.
+
+    - style속성 바꿀 때 class로 처리하는게 좋은 이유
+        - 우선순위가 꼬이지 않음
+        - 스타일이 여러개 바뀔 때 코드 줄 수가 줄어든다.
+        - 퍼블리싱을 따로 할 때 초기값 세팅시 스타일 적용 가능
+
+    - 텍스트 비교
+        - class="aa bb cc"
+           ex) if (dd.indexOf('bb') >= 0)
+        - == X === O
+            data type까지 비교
+            1 <> "1"
+            if(a == 1)  // "1"도 통과
+                var sum = sum + a;
+
+    - mdn에서 꼭 스펙 확인해서 타겟 브라우저 지원 여부 확인하기
+        - string : includes, indexof
+        - classList : toggle, add, remove (이건 IE 지원 X)
+
+    - form validation

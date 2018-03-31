@@ -153,3 +153,16 @@
         - classList : toggle, add, remove (이건 IE 지원 X)
 
     - form validation
+
+8. 2018-03-31
+    - form validation - Generalization
+
+    - generic programming
+        - 내용물이 바뀌어도 코드는 크게 바뀌지 않는다.
+
+    - regular expression (regex)
+        - JS에서는 /dsfsfd/
+        - 또는 new Regexp()
+
+    - CSS : + 선택자
+

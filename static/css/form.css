@@ -2,7 +2,44 @@
     width:550px;
     margin: 200px auto;
 }
-input {
+label {
+    display:block;
+}
+
+
+
+/* radio, checkbox 스타일링 */
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    margin-right:10px;
+    padding-left:20px;
+}
+input[type="radio"] + label::before {
+    content:'';
+    position: absolute;
+    left:0;
+    width:16px;
+    height:16px;
+    background-color:black;
+    color:#fff;
+
+    text-align:center;
+    line-height:16px;
+    font-size:24px;
+}
+input[type="radio"]:checked + label::before {
+    /* content:'\2713'; ASCII CODE : 브라우저마다 다르게 렌더링 */
+    font-family: 'Material Icons';
+    content:'check';
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
     width:100%;
     padding:12px 24px;
     font-size:16px;

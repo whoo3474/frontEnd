@@ -166,3 +166,14 @@
 
     - CSS : + 선택자
 
+
+9. 2018-04-02
+    - Semantic HTML
+    - Window timer event
+        var timer = window.setTimeout(function(){}, 6000);
+        var interval = window.setInterval(function(){}, 6000);
+
+        window.clearTimeout(timer);
+        window.clearInterval(interval);
+
+    

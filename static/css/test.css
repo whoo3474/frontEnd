@@ -1,0 +1,18 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.carousels-list{
+    width: 300px;
+    overflow: hidden;
+}
+
+.carousels{
+    width:1200px;
+}
+
+.carousel{
+    width: 300px;
+    float: left;
+}

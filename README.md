@@ -177,3 +177,14 @@
         window.clearInterval(interval);
 
     
+10. 2018-04-09
+    - Carousel
+        - JS animation
+        - Css animation
+    - CSS Animation
+        - 어떤 시간 동안 어떤 동작을 할지를 정의 (시간에 따른 동작 정의)
+    - CSS Transition 
+        - 어떤 상태 변화를 어떤 시간동안 늘여서 할지를 정의 (전환 효과만 정의)
+    - JS vs CSS
+        - JS : 사용자 이벤트가 있을 때
+        - CSS : 사용자 이벤트가 없을 때

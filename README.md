@@ -188,3 +188,30 @@
     - JS vs CSS
         - JS : 사용자 이벤트가 있을 때
         - CSS : 사용자 이벤트가 없을 때
+
+11. 2018-04-21
+    - npm
+        - npm install --save PACKAGE_NAME
+        - npm install --save-dev PACKAGE_NAME
+    - Express (express boilerplate)
+        - http://expressjs.com/ko/starter/generator.html
+
+12. 2018-04-23
+    - SPA (Single Page Application)
+        - 페이지에 JS 구동이 복잡할 때
+        - 사이트 규모가 작을 때
+    - REST API
+        - 언어나 플랫폼에 상관없이 공통적으로 쓸 수 있는 데이터 only api
+        - 주소 설정이나 http 메소드 선택에 정해진 rule이 있음
+        - json or xml
+        - HTTP Method ( DB CRUD(create read update delete) 1대1 매칭 )
+            - C : POST
+            - U : PUT
+            - R : GET
+            - D : DELETE
+    - 시스템 아키텍처
+        - rest api (api.site.com) (ec2 or beanstalk)
+        - web (www.site.com react) (s3)
+        - app ( android, ios )
+    - README
+    - Serverless (Firebase)

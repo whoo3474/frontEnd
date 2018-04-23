@@ -1,0 +1,74 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.carousels-list{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+.carousels-list button {
+    position: absolute;
+    height:40px;
+    margin-top:-20px;
+    top:50%;
+}
+.carousels-list button.prev {
+    left:0
+}
+.carousels-list button.next {
+    right:0
+}
+.carousels{
+    width:1200px;
+}
+
+.carousel{
+    width: 300px;
+    float: left;
+}
+
+.circle {
+    position: relative;
+    left:500px;
+    width:50px;
+    height:50px;
+    background-color:violet;
+    animation-name: move;
+    animation-delay: 1000ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    border:red 2px solid
+}
+/* css animation */
+/* @keyframes move {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#carousels {
+    animation: carousel 8s infinite;
+}
+@keyframes carousel {
+    from {
+        transform:translate(0);
+    }
+    25% {
+        transform:translate(-300px);
+    }
+    50% {
+        transform:translate(-600px);
+    }
+    75% {
+        transform:translate(-900px);
+    }
+    to {
+        transform:translate(0);
+    }
+} */

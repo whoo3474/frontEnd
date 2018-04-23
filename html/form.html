@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/form.css" />
+</head>
+<body>
+    <div class="area-form">
+        <form>
+            <div class="form-field">
+                <label for="email">이메일</label>
+                <input id="email" type="email" name="email" minlength="6" regex='^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$' required />
+                <p class="alert"></p>
+            </div>
+            <div class="form-field">
+                <input type="password" name="pwd" minlength="8" regex="" required />
+                <p class="alert"></p>
+            </div>
+            <div class="form-field">
+                <label>성별</label>
+                <input type="radio" name="gender" id="gender-1"/><label for="gender-1"> 남자</label>
+                <input type="radio" name="gender" id="gender-2" /><label for="gender-2"> 여자</label>
+            </div>
+            <div class="form-field">
+                <input type="password" name="pwd-confirm" minlength="8" sameWith="pwd" required />
+                <p class="alert"></p>
+            </div>
+            <div class="form-field">
+                <input id="zipcode" type="text" name="zipcode" placeholder="우편번호" required />
+                <input id="address1" type="text" name="address1" placeholder="주소" required />
+                <input id="address2" type="text" name="address2" placeholder="상세주소" />
+                <p class="alert"></p>
+            </div>
+            <button>가입</button>
+        </form>
+    </div>
+</body>
+<script src="../static/js/form.js"></script>
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script>
+    var searchAddress = function() {
+        document.getElementById('address2').focus();
+        new daum.Postcode({
+            oncomplete: function(data) {
+                document.getElementById('zipcode').value = data.sigunguCode;
+                document.getElementById('address1').value = data.roadAddress;
+            }
+        }).open();
+    }
+    document.getElementById('zipcode').addEventListener('focus',searchAddress)
+    document.getElementById('address1').addEventListener('focus',searchAddress)
+</script>
+</html>

@@ -1,0 +1,211 @@
+html {
+    font-size:14px;
+}
+
+/*
+header {
+    width:100%;
+    font-size:1.2em;
+    text-align:justify;
+}
+header .logo {
+    display:inline-block;
+    font-size:2em;
+}
+header ul.nav {
+    display:inline-block;
+    list-style:none;
+    font-size:1.4rem;
+}
+.nav li {
+    display:inline-block;
+}
+header::after {
+    display: inline-block;
+    content:'';
+    width:100%;
+} */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    background-color: #efefef;
+}
+.container {
+    width:1100px;
+    margin:0 auto;
+}
+@media(max-width:400px) {
+    .container {
+        width:100%;
+    }
+}
+header {
+    padding:6px;
+    background-color:navy;
+    color:#fff;
+    width:100%;
+    font-size:1.2em;
+}
+header .container {
+    display:flex;
+    flex-direction: row;
+    /* 쌓는 방향과 평행으로 어떻게 쌓을 것인가? */
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* 쌓는 방향과 수직으로 어떻게 쌓을 것인가? */
+    align-items:center;
+}
+header .logo {
+    font-size:2em;
+}
+header ul.nav {
+    display:flex;
+    list-style:none;
+    font-size:1.4rem;
+}
+header .material-icons {
+    display:none;
+}
+header #menu-mobile {
+    display:none;
+}
+@media(max-width:400px) {
+    header {
+        position: relative;
+    }
+    header ul.nav {
+        display:none;
+    }
+    header .material-icons {
+        display:block;
+    }
+    header #menu-mobile {
+        background-color:rgba(0,0,0,.6);
+        display:block;
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0
+    }
+    header #menu-mobile.hide {
+        display:none;
+    }
+    header #menu-mobile ul {
+        margin:0;position: absolute;
+        height:100%;right:0;width:160px;
+        padding:0;
+        background-color:#fff;
+        color:#000;
+        list-style: none;
+    }
+    header #menu-mobile ul li {
+        padding:12px;
+    }
+}
+ul.nav li {
+    margin-left:20px;
+}
+.main {
+    /* background-color:#fff; */
+    background-image:url(../image/library-1.jpg);
+    /* background-image:url(../image/04743579.jpg); */
+    background-position: center center;
+    background-size: 1300px 600px; 
+    /*  이미지가 잘리더라도 레이어를 다 덮도록 */
+    /* background-size: contain; */
+    /* 이미지 비율을 유지하고 잘리지 않도록 꽉 채워 넣기 */
+    background-repeat:no-repeat;
+    margin-top:0;
+    padding: 80px 0;
+    color:#fff;
+}
+
+.main h1{
+    margin:0
+}
+
+.main p {
+    font-weight:500;
+    font-size: 20px;
+    line-height: 1em;
+    letter-spacing: -1px;
+}
+.books > div::after {
+    clear: both;
+    content:'';
+    display:block
+}
+.book{
+  width: 20%;
+  margin:0 2.5%;
+  float:left;
+  background-color:#fff;
+  border: 1px solid #d0d0d0;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.6) 
+}
+.book .area-img {
+    position:relative;
+}
+.book img {
+    width:100%
+}
+.book .area-img .overlay {
+    opacity: 0;
+    transition:0.3s ease all;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    background-color:rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book .area-img:hover .overlay {
+    opacity: 1;
+}
+.book button {
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    cursor: pointer;
+}
+.book button:hover {
+    color:#ffd5af;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon.before.like::before,
+.icon.after.like::after {
+    font-family:'Material Icons';
+    content:'favorite';
+    font-size:24px;
+}
+.icon.before.reply::before,
+.icon.after.reply::after {
+    font-family:'Material Icons';
+    content:'mode_comment';
+    font-size:24px;
+}
+.book h4,
+.book p {
+    padding:0 12px
+}
+@media(max-width:400px) {
+    .book{
+        width: 45%;
+        margin-bottom:20px;
+        float:left;
+    }
+}
+
+.book p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

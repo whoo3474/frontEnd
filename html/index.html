@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <!-- 영역은 class / id명이나 주석으로 시작과 끝을 구분해두는게 좋습니다. -->
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <!-- <div class="before"></div> -->
+            <div class="logo">LOGO</div>
+            <i class="material-icons" id="menu-button">menu</i>
+            <ul class="nav">
+                <li><a href="#">서점</a></li>
+                <li>작가</li>
+                <li>리뷰</li>
+                <li>로그인</li>
+                <!-- <li>마이메뉴</li> -->
+            </ul>
+            <!-- <div class="after"></div> -->
+
+            <div id="menu-mobile" class="hide">
+                <ul>
+                    <li>서점</li>
+                    <li>작가</li>
+                    <li>리뷰</li>
+                    <li>로그인</li>
+                    <!-- <li>마이메뉴</li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- 메인 캠페인 영역 시작 -->
+    <div class="main">
+        <div class="container">
+            <h1>인디서적 전문 사이트 오픈</h1>
+            <p>
+                전국의 모든 인디서적, 작가, 작품정보를<br/>
+                한번에 볼 수 있습니다.
+                <i class="icon-upload"></i>
+            </p>
+            <button type="button">신규등록작품보기</button>
+        </div>
+    </div>
+    <!-- 메인 캠페인 영역 끝 -->
+    <div class="books">
+        <div class="container">
+            <h2>오늘의 신간 소개</h2>
+        </div>
+        <div class="container">
+            <div class="book">
+                <div class="area-img">
+                    <img src="../static/image/04743579.jpg" />
+                    <div class="overlay">
+                        <button class="icon before like"></button>
+                        <button class="icon before reply"></button>
+                    </div>
+                </div>
+                <h4>책제목1</h4>
+                <p>짧은 설명</p>
+            </div>
+            <div class="book">
+                <img src="../static/image/04743579.jpg" />
+                <h4>책제목2</h4>
+                <p>짧은 설명</p>
+            </div>
+            <div class="book">
+                <img src="../static/image/04743579.jpg" />
+                <h4>책제목3</h4>
+                <p>짧은 설명</p>
+            </div>
+            <div class="book">
+                <img src="../static/image/04743579.jpg" />
+                <h4>책제목4</h4>
+                <p>짧은 설명 짧은 설명 짧은 설명 짧은 설명 짧은 설명</p>
+            </div>
+        </div>
+    </div>
+    <div class="interview">
+        <div class="container">
+            <img src="" />
+            <h2>이달의 작가, ㅇㅇㅇ</h2>
+            <p>
+                인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략
+                인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략
+                인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략 인터뷰 내용 중략
+            </p>
+        </div>
+    </div>
+    <!-- <div class="reviews"></div> -->
+    <!-- <footer></footer> -->
+</body>
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        document.getElementById('menu-mobile').className="";
+    })
+</script>
+</html>

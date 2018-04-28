@@ -215,3 +215,40 @@
         - app ( android, ios )
     - README
     - Serverless (Firebase)
+
+13. 2018 - 04 - 28
+    - library, framework, module, package, api
+        - library : (일반적으로 언어에 귀속돼서) 많이 쓰는 기능을 코드로 모아둔 것
+            - library를 사용할 땐 라이브러리 내부의 함수나 변수 등을 사용 가능 + 라이브러리 내용을 일반적으론 볼 수 있고 수정도 가능하다.
+        - framework : 라이브러리가 확장된 개념인데, 독자적인 라이프 사이클이나 아키텍처를 갖는 것
+        - module : 누군가 만들어 놓은걸 갖다 쓴다는 개념에서는 같은데, 일반적으로 모듈은 코드를 깔 수 없고 이미 빌드 된 상태 (실행가능한 실행파일과 유사한 상태 pre-compiled)
+            - 컴파일 언어 : 각각 컴파일 -> 링크 (각각 컴파일된 파일들이랑 공용 라이브러리를 합치는 과정) -> 실행파일
+        - package : linux, node, mobile에서 많이 쓰는 개념             
+            - 게임을 예로들면 .exe + 그림파일 + 사운드파일 각종 실행에 필요한 파일들이 다 묶어서 디렉토리(폴더)에 들어가있다. 이걸 패키지라고 한다.
+
+        - api!!!
+            - 개념적인 거
+            - 위의 것들은 실제 실물, 구현체
+        
+    - react : UI를 만드는 JS 라이브러리
+        - component 중심 : UI적으로 개념이 공통된 부분들을 Generalization한 것
+        - 가상 DOM이랑 JS 코드를 엮어서 분산되지 않고 쓸 수 있다
+        - JSX != HTML 
+        - JS로 코딩하고 render할 때 jsx를 리턴
+        - react 사용법
+            1. CDN에서 갖고와서 ES5 문법으로 쓰기
+    - jsx
+        - html을 js 안에서 그대로 쓸 수 있도록 (String X)
+        - jsx에서 태그 속성은 무조건 camel case naming, HTML과 속성명 다름
+            - Example
+                - HTML : <label class="abc" for="ID">TEXT</label>
+                - JSX : <label className="abc" htmlFor="ID">TEXT</label>
+        - jsx의 속성값은 무조건 js object나 string
+            - Example
+                - HTML : <input type="text" maxlength="5" />
+                - JSX : <input type="text" maxLength={VARIABLE_NAME} />
+        - jsx의 inline-style은 js object
+            - Example
+                - HTML : <label style="margin-left:0">TEXT</label>
+                - JSX : <label style={{marginLeft:0, marginRight:0}}>TEXT</label>
+        

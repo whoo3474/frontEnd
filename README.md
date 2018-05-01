@@ -237,6 +237,7 @@
         - JS로 코딩하고 render할 때 jsx를 리턴
         - react 사용법
             1. CDN에서 갖고와서 ES5 문법으로 쓰기
+            2. node에서 node package로 관련 패키지 설치하여 ES6/ES5 문법으로 작성한 후 빌드 / 번들링해서 사용하기 (압도적으로 후자를 많이 씀)
     - jsx
         - html을 js 안에서 그대로 쓸 수 있도록 (String X)
         - jsx에서 태그 속성은 무조건 camel case naming, HTML과 속성명 다름
@@ -252,3 +253,7 @@
                 - HTML : <label style="margin-left:0">TEXT</label>
                 - JSX : <label style={{marginLeft:0, marginRight:0}}>TEXT</label>
         
+14. 2018 - 05 - 01
+    - create-react-app
+        - create-react-app REACT_APP_NAME
+    - ES6 import, export, export default

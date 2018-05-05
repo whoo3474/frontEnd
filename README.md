@@ -254,6 +254,48 @@
                 - JSX : <label style={{marginLeft:0, marginRight:0}}>TEXT</label>
         
 14. 2018 - 05 - 01
-    - create-react-app
+    - create-react-app ( react boiler plate )
         - create-react-app REACT_APP_NAME
     - ES6 import, export, export default
+
+15. 2018 - 05 - 05
+    - [JS this](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this)
+    - [JS strict mode](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode)
+    - [JS arrow function](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98)
+
+    
+    - react component
+        : UI상에서 공통적으로 뽑아낼 수 있는 구성요소
+        import React from 'react' : 필수!
+        - state, props 변경시에만 render를 호출
+        - 내부 함수
+            - bind
+            - Arrow function
+        - state : 상태 (내부적으로 가지고 있는 값)
+             - 꼭 setState로 업데이트 하세요
+        - props : 속성 (외부에서 주어지는 값)
+            - children
+        
+
+    - template
+        - 문서 양식이 이미 정해져있고 거기 값을 넣을 수 있게 해놓은 것 
+
+    - text template
+        - `` : template
+        - '' : string
+
+    - component life cycle
+        - constructor
+        - componentWillMount -> 쓰지 마세요
+        - render
+        - componentDidMount
+        - componentWillUpdate -> 쓰지 마세요
+        - render
+        - componentDidUpdate
+
+    - Component vs PureComponent
+        - Component : state, props 감지
+        - PureComponent : state를 갖지 않는 컴포넌트
+
+    - props changed
+        - shouldComponentUpdate

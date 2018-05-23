@@ -1,0 +1,30 @@
+.cart {
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart th{
+    border-bottom: 2px solid #525252;
+    text-align: center;
+}
+
+.cart td{
+    border-bottom: 1px solid #525252;
+    text-align: center;
+}
+
+.cart tr td:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.cart tr td:first-child img{
+    width: 140px;
+    height: 140px;
+}
+

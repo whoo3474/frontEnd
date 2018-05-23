@@ -326,3 +326,54 @@
                 - 총액
                 - 구매하기 버튼
                 - 삭제하기 버튼
+
+17. 2018 - 05 - 23 (1.5시간)
+    - 라이브러리 / 패키지
+        - Official
+            - php -> mysql
+        - Third party
+            - 공식적이지 않고, 해당 언어 메인스트림에 상관없는 것
+    - node는 콘솔용 인터프리터 언어
+    - node - mysql 연결
+        - node package mysql (우리가 쓸거)
+            - [Github repo](https://github.com/mysqljs/mysql)
+            - npm install mysql --save
+        - sequalize
+            - a promise based ORM
+            - ORM (Object relatinal mapping)
+                - Object랑 데이터베이스의 테이블을 매핑해서 관리하는 것
+                - 기본적으로 query를 대체해주기 때문에 CRUD는 대체로 되고,
+                    object를 먼저 정의하고 그걸로 table을 생성해주거나 업데이트 해주거나 삭제하거나 하는 기능은 안될 수 있음
+            - Promise
+                - Sync vs Async
+                    - Sync(동기) : function call을 한 후 function이 return하기 전까지 다음 줄을 실행하지 않는 것
+                    - Async(비동기) : function call을 한 후 function이 return을 하든 말든 다음 줄을 바로 실행하는 것
+                - Callback Function
+                    - 비동기 언어인 자바스크립트에서 특정 함수의 수행이 끝날 때 인자로 가져온 함수를 실행함으로써 함수의 종료를 알리는 기법
+                    - 콜백 지옥
+                        - 과정이 너무 다단계여서 콜백이 너무 많은 상황 : 가독성이 떨어짐
+                        - 콜백 지옥 해결을 위해 ES6에서 promise라는 개념이 표준화됨
+                - 생성법 : function add(a,b) {
+                    return new Promise(resolve, reject) {
+                        if(success)
+                            resolve(result)
+                        else
+                            reject(error)
+                    }
+                }
+                - 사용법 : add(a,b)
+                    .then(function() {
+
+                    })
+                    .catch(function()){
+
+                    }
+    - Polyfill
+        - 우리가 항상 최신 버전을 지원하는 플랫폼만 쓸 수는 없음
+        - 특정 기능들을 예전 버전에서도 최신 문법으로 쓸 수 있게 만들어 주는 것
+
+
+
+    
+
+

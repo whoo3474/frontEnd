@@ -395,3 +395,15 @@
     - node global variable
         - browser : window
         - node : global
+    - state
+        - this.state.item을 다른 함수안에서 같은 이름으로 쓰고 싶으면 const {item} = this.state; 로 선언 가능하다.
+    - map vs forEach
+        - 둘 다 iteration을 해주지만 map은 각각 return 해서 결과물이 배열이다.
+
+    - Component refs
+    - Fetch API ( MDN 참조 )
+    - [Form data type](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type) 지정
+    - FormData JSON화 하기
+        1. FormData API ( MDN 참조 )
+        2. 
+        

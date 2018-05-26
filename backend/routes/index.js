@@ -13,7 +13,7 @@ router.post('/', function(req, res) {
   return res.json({isServerRun:'OK'})
 })
 
-new item(router);
+new item(router.route('/item'))
 
 
 module.exports = router;

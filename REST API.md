@@ -1,0 +1,19 @@
+- item
+    - schema (구조)
+        - id
+            - type : int
+        - name
+            - type : string(50)
+        - price
+            - type : int
+            - default : 0
+        - inventory
+            - type : int
+            - default : 0
+        - photoURL
+            - type : string(255)
+    - method
+        - POST
+        - GET
+        - PUT
+- 

@@ -1,6 +1,6 @@
 # frontend
 
-1. Class 2018 - 03 - 01
+1. Class 2018 - 03 - 01 (1회차)
     - Git은 DVCS (Distributed Version Control System)
     - Github은 온라인 Git Repository를 제공해주는 Git 서비스
 
@@ -8,7 +8,7 @@
     - Branch 생성, 원격 브랜치 생성
     - Branch Pull Request
 
-2. 2018 - 03 - 03
+2. 2018 - 03 - 03 (8회차)
     - 프로젝트 진행 순서
         1. 기획
         2. 디자인
@@ -49,7 +49,7 @@
         - display:inline-block
         - display:flex // 이게 더 요즘 방식
 
-3. 2018 - 03 - 12
+4. 2018 - 03 - 12
     - 작업영역
         - 기획
         - 디자인
@@ -75,7 +75,7 @@
             - 폰트아이콘 3개 -> 리퀘스트 한번
             - 핸드쉐이킹 
 
-4. 2018-03-17
+5. 2018-03-17
     - fonticon
         - 커스텀 아이콘 생성이나 원하는 아이콘 골라서 쓸 땐 fontello 이용
     - icon
@@ -89,12 +89,12 @@
         - text-decoration : 밑줄이나 취소선 등 데코레이션 추가
         - font-weight : 글씨 굵기 (100-700 높을수록 굵다),  normal (일반적으로 400), bold (일반적으로 700)
 
-5. 2018-03-19
+6. 2018-03-19
     - 많은 질문들
     - 백그라운드 반응형으로 크기지정
     - flex:1
 
-6. 2018-03-24
+7. 2018-03-24
     - compile vs interpreter
         - compile: 컴파일 과정, 번역 과정 ->  파일 전체 : 최적화 효율적 / 개발 어렵
         - interpreter : 한 줄 씩 입력받아서 번역 : 최적화 떨어지지만 개발이 쉽다
@@ -102,7 +102,7 @@
         - variable에는 데이터 형이 없다. var
         - 이벤트 핸들링 방식 : 콜백 지옥
 
-7. 2018-03-26
+8. 2018-03-26
     - JS의 모든 원형, 객체는 Object
         - function => Object
         - String => Object
@@ -154,7 +154,7 @@
 
     - form validation
 
-8. 2018-03-31
+9. 2018-03-31 (선금완료)
     - form validation - Generalization
 
     - generic programming
@@ -167,7 +167,7 @@
     - CSS : + 선택자
 
 
-9. 2018-04-02
+10. 2018-04-02
     - Semantic HTML
     - Window timer event
         var timer = window.setTimeout(function(){}, 6000);
@@ -177,7 +177,7 @@
         window.clearInterval(interval);
 
     
-10. 2018-04-09
+11. 2018-04-09
     - Carousel
         - JS animation
         - Css animation
@@ -189,14 +189,14 @@
         - JS : 사용자 이벤트가 있을 때
         - CSS : 사용자 이벤트가 없을 때
 
-11. 2018-04-21
+12. 2018-04-21
     - npm
         - npm install --save PACKAGE_NAME
         - npm install --save-dev PACKAGE_NAME
     - Express (express boilerplate)
         - http://expressjs.com/ko/starter/generator.html
 
-12. 2018-04-23
+14. 2018-04-23 (4회차)
     - SPA (Single Page Application)
         - 페이지에 JS 구동이 복잡할 때
         - 사이트 규모가 작을 때
@@ -216,7 +216,7 @@
     - README
     - Serverless (Firebase)
 
-13. 2018 - 04 - 28
+15. 2018 - 04 - 28 
     - library, framework, module, package, api
         - library : (일반적으로 언어에 귀속돼서) 많이 쓰는 기능을 코드로 모아둔 것
             - library를 사용할 땐 라이브러리 내부의 함수나 변수 등을 사용 가능 + 라이브러리 내용을 일반적으론 볼 수 있고 수정도 가능하다.
@@ -253,12 +253,12 @@
                 - HTML : <label style="margin-left:0">TEXT</label>
                 - JSX : <label style={{marginLeft:0, marginRight:0}}>TEXT</label>
         
-14. 2018 - 05 - 01
+16. 2018 - 05 - 01
     - create-react-app ( react boiler plate )
         - create-react-app REACT_APP_NAME
     - ES6 import, export, export default
 
-15. 2018 - 05 - 05
+17. 2018 - 05 - 05
     - [JS this](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this)
     - [JS strict mode](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode)
     - [JS arrow function](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98)
@@ -373,7 +373,5 @@
         - 특정 기능들을 예전 버전에서도 최신 문법으로 쓸 수 있게 만들어 주는 것
 
 
-
-    
-
-
+18. 2018 - 05 - 26 (3.5h) (6회차)
+    - REST API 필요목록 정리

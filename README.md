@@ -375,3 +375,23 @@
 
 18. 2018 - 05 - 26 (3.5h) (6회차)
     - REST API 필요목록 정리
+    - ES5 vs ES6 import / export 차이
+        - 내보낼때
+            - export default item : ES6
+            - module.exports = item; // ES5
+
+        - 불러올때
+            - import item, {subItem} from 'moduleName'
+            - var item = require('moduleName')
+
+        - 내보낼때
+            - export subItem : ES6
+            - module.subItem = function() {} : ES5
+
+        - 불러올때
+            - import {subItem} from 'moduleName' : ES6
+            - var subItem = require('moduleName').subItem : ES5
+
+    - node global variable
+        - browser : window
+        - node : global

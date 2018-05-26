@@ -1,21 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
-var mysql      = require('mysql');
 var item = require('./item');
 
-var connection = mysql.createConnection({
-  host     : 'rds-mysql.cfp92mapp9op.us-east-1.rds.amazonaws.com',
-  user     : 'whoo3474',
-  password : 'hatuhana1',
-  database : 'node_mysql'
-});
-
+// / 경로로 들어오는 GET 메소드 리퀘스트 처리
 router.get('/', function(req, res) {
   return res.json({isServerRun:'OK'})
 })
 
-new item(connection, router);
+// / 경로로 들어오는 POST 메소드 리퀘스트 처리
+router.post('/', function(req, res) {
+  return res.json({isServerRun:'OK'})
+})
+
+new item(router);
 
 
 module.exports = router;

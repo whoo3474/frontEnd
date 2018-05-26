@@ -12,6 +12,8 @@
             - default : 0
         - photoURL
             - type : string(255)
+        - is_deleted
+            - type : boolean
     - method
         - POST
         - GET

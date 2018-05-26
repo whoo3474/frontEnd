@@ -1,15 +1,24 @@
-function item(connection, router) {
-    router.get('/item', function (req, res, next) {
-        connection.connect();
-        connection.query('select * from items', function (error, results, fields) {
+function item(router) {
+    router.get('/item', function (req, res) {
+        __db.query('select * from items', function (error, results, fields) {
             if (error) {
                 // next(error);
                 // return;
                 return res.json(error);
             }
             return res.json(results)
-            connection.end();
         });    
     })
+    router.post('/item', function (req, res) {
+        // __db.query('insert ', function(error, results, fields) {
+        //     if (error) {
+        //         // next(error);
+        //         // return;
+        //         return res.json(error);
+        //     }
+        //     return res.json(results)
+        // })
+    })
 }
+ 
 module.exports = item;

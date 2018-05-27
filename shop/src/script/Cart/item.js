@@ -19,10 +19,10 @@ class Item extends Component{
     }
 
     changeCount = (count) => {
-        if(count.length == 0 ){
+        if(count.length === 0 ){
             return;
         }
-        let intCount = parseInt(count);
+        let intCount = parseInt(count, 10);
         this.setState({count:intCount});
     }
 
@@ -33,7 +33,7 @@ class Item extends Component{
         return(
             <tr>
                 <td>
-                    <img src={item.photoURL} />
+                    <img alt={item.name} src={item.photoURL} />
                     <h4>
                         {item.name}
                     </h4>

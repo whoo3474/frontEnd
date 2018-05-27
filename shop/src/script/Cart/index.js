@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 import Item from './item';
-import items from '../../api/items';
+import {getItems} from '../../api/items';
 
 class Cart extends Component {
     constructor(props){
         super(props);
         // super는 React 내부의 Component 클래스의 생성자를 호출한다.
+        this.state = {
+            itemList:[]
+        }
     }
-    render (){
+    componentDidMount() {
+        getItems().then(items => {
+            this.setState({itemList : items})
+        });
+    }
+    render () {
+        // this.state.itemList
+        const {itemList} = this.state;
+
+        var cartItems = itemList.map((i) => {
+            return <Item key={i.id} item={i} />
+        })
+
         return(
             <div className="cart">
                 <table>
@@ -20,7 +35,7 @@ class Cart extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <Item item={items[0]} />
+                        {cartItems}
                     </tbody>
                 </table>
             </div>

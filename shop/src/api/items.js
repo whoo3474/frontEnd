@@ -1,32 +1,14 @@
-const items = [
-    {
-        "id":1,
-        "name":"1인용 소파",
-        "price":50000,
-        "inventory":1000,
-        "photoURL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYfjh3sw4655OLrs50yZvbMIZarlFlqnmfRxDO2niWP9Z6mn4"
-    },
-    {
-        "id":2,
-        "name":"2인용 소파",
-        "price":100000,
-        "inventory":1000,
-        "photoURL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4e-29_FPmINCghM_v5zgvGGNG_BI9dAfZkr3C71wRs6_bCM1sA"
-    },
-    {
-        "id":3,
-        "name":"1인용 침대",
-        "price":200000,
-        "inventory":1000,
-        "photoURL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfm8yhIZ6b66Ejwnk-WQOknurh_VQWedxOrEPwNRAi_VgxQGsDJQ"
-    },
-    {
-        "id":4,
-        "name":"2인용 침대",
-        "price":300000,
-        "inventory":1000,
-        "photoURL":"data:image/jpeg;base64,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"
-    }
-]
-
-export default items;
+export function getItems() {
+    return new Promise((resolve, reject) => {
+        fetch('http://localhost:3001/item')
+        .then(result => {
+            return result.json()
+        })
+        .then(items => {
+            resolve(items);
+        })
+        .catch(err => {
+            reject(err);
+        })
+    })
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Item from './item';
-import {getItems} from '../../api/items';
+import {getItems} from '../../api/cart';
 
 class Cart extends Component {
     constructor(props){

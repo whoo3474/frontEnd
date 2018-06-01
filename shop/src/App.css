@@ -1,0 +1,95 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR',sans-serif;
+  color:#525252;
+  font-size:14px;
+}
+
+
+/* Common css */
+.primary {
+    color:#ce2d2d;
+}
+.secondary {
+    color:#525252;
+}
+.container {
+    width:1080px;
+    margin:0 auto;
+}
+
+.row {
+    margin-left:-14px;
+}
+
+a {
+    color:#525252;
+}
+a:hover, a:focus, a:active {   
+    color:#ce2d2d
+}
+
+h1, h2, h3, h4, h5, p {
+    margin:0;
+}
+
+.ft-bold {
+    font-weight:600;
+}
+.ft-normal {
+    font-weight:400;
+}
+.ft-12 {
+    font-size:12px;
+}
+.ft-16 {
+    font-size:16px;
+}
+.ft-18 {
+    font-size:18px;
+}
+/* Include parts */
+header {
+    border-bottom:1px solid #525252;
+    margin-bottom:40px;
+}
+header > .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav {
+    display:flex;
+    justify-content: flex-end;
+    list-style:none;
+}
+header .nav li {
+    font-size:18px;
+    margin-left:40px;
+    text-align:right;
+}
+header a {
+    text-decoration: none;
+}
+header .cart-icon {
+    position: relative;
+}
+header .cart-icon .badge {
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    width:12px;
+    height:12px;
+    font-size:8px;
+    border-radius: 50%;
+    background-color:#ce2d2d;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

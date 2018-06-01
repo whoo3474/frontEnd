@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Item from './item';
 import {getItems} from '../../api/cart';
+import './index.css';
 
 class Cart extends Component {
     constructor(props){

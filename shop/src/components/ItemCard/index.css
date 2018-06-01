@@ -1,0 +1,28 @@
+.item-card {
+    float:left;
+    width:232px;
+    margin:0 14px 20px;
+    cursor:pointer;
+    transition:border 0.2s ease;
+    border:1px solid #d0d0d0;
+}
+.item-card:hover {
+    border:1px solid #525252;
+}
+.item-card img {
+    width:100%;
+    height:260px;
+    border-bottom:1px solid #d0d0d0;
+}
+.item-card:hover img {
+    border-bottom:1px solid #525252;
+}
+.item-card a {
+    text-decoration: none;
+}
+.item-card .info {
+    padding: 16px 6px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}

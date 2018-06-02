@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Item from './item';
 import {getItems} from '../../api/cart';
 import './index.css';
@@ -44,4 +45,7 @@ class Cart extends Component {
     }
 }
 
-export default Cart;
+export default connect((state) => {
+    return {
+    cartCount:state.cart.cartCount
+}})(Cart);

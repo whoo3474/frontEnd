@@ -47,5 +47,5 @@ class Cart extends Component {
 
 export default connect((state) => {
     return {
-    cartCount:state.cart.cartCount
+    cartCount:state.cart.cartItems
 }})(Cart);

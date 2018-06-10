@@ -1,5 +1,5 @@
 const initialState = {
-  cartCount:0
+  cartItems:[]
 }
 
 export default function cart(state = initialState, action) {

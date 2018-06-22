@@ -1,27 +1,24 @@
 function item(router) {
     router
     .get(function (req, res) {
-        if(req.query.id === undefined) {
+        if(req.params.id) {
+            __db.query('select * from items where id='+req.params.id, function (error, results, fields) {
+                if (error) {
+                    return res.json(error);
+                }
+                if(results.length === 0) {
+                    return res.json({sqlMessage:'There is no item with id ' + req.params.id});
+                }
+                return res.json(results[0]);
+            });
+        } else {
             __db.query('select * from items', function (error, results, fields) {
                 if (error) {
-                    // next(error);
-                    // return;
                     return res.json(error);
                 }
                 return res.json(results)
             });  
-        } else {
-            __db.query('select * from items where id='+req.query.id, function (error, results, fields) {
-                if (error) {
-                    // next(error);
-                    // return;
-                    return res.json(error);
-                }
-                if(results.length === 0) {
-                    return next();
-                }
-                return res.json(results[0]);
-            });  
+            
         }
     })
     .post(function (req, res) {

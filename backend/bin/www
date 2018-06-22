@@ -7,8 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('backend:server');
 var http = require('http');
-var db = require('../db');
-
 /**
  * Get port from environment and store in Express.
  */
@@ -21,7 +19,6 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-db.connect();
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -78,11 +75,6 @@ function onError(error) {
   }
 }
 
-global.__db = db;
-
-server.on('close', function() {
-  db.end();
-});
 
 process.on('SIGINT', function() {
   server.close();

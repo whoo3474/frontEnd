@@ -31,26 +31,30 @@
   height: 140px;
 }
 
-input {
-  width:300px;
-  padding:14px 12px;
-  font-size:18px;
-  line-height:18px;
-  outline:none;
-  display:block;
-  margin-bottom:12px;
-}
 
 form {
   margin: 40px auto;
-  width:300px;
+  width:740px;
 }
 
-button {
-  width:300px;
-  background-color:#525252;
-  color:#fff;
+form > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:20px;
+}
+input, button {
   font-size:18px;
   line-height:18px;
   padding: 14px 12px;
+}
+input {
+  width:100%;
+  outline:none;
+  display:block;
+}
+button{
+  min-width:120px;
+  background-color:#525252;
+  color:#fff;
 }

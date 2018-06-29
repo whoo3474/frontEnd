@@ -1,7 +1,11 @@
-import * as cart from './cart';
+import {bindActionCreators} from 'redux';
+import * as user from './user';
 
 const ActionCreator = ({
-  ...cart,
+  ...user,
 });
 
-export default ActionCreator;
+function getActionCreators(dispatch) {
+  return bindActionCreators(ActionCreator, dispatch);
+}
+export default getActionCreators;

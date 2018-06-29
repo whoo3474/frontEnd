@@ -1,4 +1,6 @@
-function item(db, router) {
+var crypto = require('crypto');
+
+function user(db, router) {
   router
   .get(function (req, res) {
     if(req.params.id) {
@@ -17,12 +19,13 @@ function item(db, router) {
   })
   .post(function(req, res) {
     db.upsert(req.body).then(result => {
-      res.json(result)
+      var userData = req.body;
+      res.json({isSuccess:result})
     })
     .catch(err => {
-      res.json(err);
+      res.json({isSuccess:false, err:err});
     })
   })
 }
 
-module.exports = item;
+module.exports = user;

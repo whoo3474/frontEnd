@@ -14,6 +14,7 @@ var instance = new Sequelize('node_mysql', 'whoo3474', 'hatuhana1', {
   },
 });
 
+// module.exports.user = instance.define('user',userSchema);
 module.exports.user = userDefine(instance);
 module.exports.category = itemDefine.category(instance);
 module.exports.item = itemDefine.item(instance);

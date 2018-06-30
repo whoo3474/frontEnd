@@ -24,6 +24,20 @@ class Form extends React.Component {
           this.setState({alert:''});
         }
         break;
+      case 'pw':
+        if(evt.target.value !== this.state.pwConfirm) {
+          this.setState({alert:'비밀번호와 비밀번호 확인이 다릅니다.'});
+        }
+        else {
+          this.setState({alert:''});
+        }
+      case 'pwConfirm':
+        if(evt.target.value !== this.state.pw) {
+          this.setState({alert:'비밀번호와 비밀번호 확인이 다릅니다.'});
+        }
+        else {
+          this.setState({alert:''});
+        }
       default:
         this.setState({alert:''});
     }

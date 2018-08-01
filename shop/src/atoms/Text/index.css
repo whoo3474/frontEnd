@@ -1,0 +1,47 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+span {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.inline {
+  display:inline-block;
+}
+.block {
+  display:block;
+}
+
+/*  colors  */
+
+.default {
+  color:#000;
+}
+.primary {
+  color:#b00016;
+}
+.secondary {
+  color:#395a97;
+}
+
+/*  weight  */
+
+.light {
+  font-weight:300;
+}
+.regular {
+  font-weight:400;
+}
+.bold {
+  font-weight:600;
+}
+
+/*  size  */
+.small {
+  font-size:12px;
+}
+.medium {
+  font-size:16px;
+}
+.large {
+  font-size:20px;
+}
